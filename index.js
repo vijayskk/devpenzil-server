@@ -20,6 +20,11 @@ app.get("/visitors", (req, res) => {
   res.end();
 });
 
+app.get("/*", (req, res) => {
+  res.write("404")
+  res.end();
+});
+
 const PORT = process.env.PORT || 3003;
 app.listen(PORT, () => {
   console.log(`Port is running on ${PORT}`);
