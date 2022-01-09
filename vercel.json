@@ -8,15 +8,7 @@
     ],
     "routes": [
         {
-            "src": "/visitors",
-            "dest": "index.js"
-        },
-        {
-            "src": "/",
-            "dest": "index.js"
-        },
-        {
-            "src": "/*",
+            "src": "/(.*)",
             "dest": "index.js"
         }
     ]
